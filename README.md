@@ -1,1 +1,1 @@
-# react-redux-authware
+# react-redux-authware-starter
