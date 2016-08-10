@@ -4,7 +4,6 @@ import * as actions from '../../actions';
 
 class AdminActivation extends Component {
   handleFormSubmit(formProps) {
-    // Call action creator to activate admin!
     this.props.activateAdmin(formProps);
   }
 
