@@ -72,11 +72,6 @@ export function activateAdmin({ email, password }) {
   return function(dispatch) {
     axios.post(`${ROOT_URL}/admin_activation`, { email, password })
       .then(response => {
-        //dispatch({ type: AUTH_USER });
-
-        // keep current admin_privileges
-        //dispatch({ type: SET_ADMIN_PRIVILEGES});
-
         browserHistory.push('/admin_area');
       })
       .catch(response => dispatch(authError(response.data.error)));
