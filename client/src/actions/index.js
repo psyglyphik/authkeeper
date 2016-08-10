@@ -77,8 +77,6 @@ export function activateAdmin({ email, password }) {
         // keep current admin_privileges
         //dispatch({ type: SET_ADMIN_PRIVILEGES});
 
-        //localStorage.setItem('token3', response.data.token);
-
         browserHistory.push('/admin_area');
       })
       .catch(response => dispatch(authError(response.data.error)));
