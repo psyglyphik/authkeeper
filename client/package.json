@@ -1,7 +1,7 @@
 {
   "name": "authkeeper client",
   "version": "1.0.0",
-  "description": "authkeeper client",
+  "description": "authkeeper react/redux client",
   "main": "index.js",
   "repository": "https://github.com/psyglyphik/authkeeper.git",
   "scripts": {
