@@ -17,7 +17,7 @@ Client-Side
 
 * axios - for making AJAX requests to the server
 
-* jwt-decode - for decoding the data carried in the validated JWTs given to client by the server
+* jwt-decode - for decoding the data carried in the validated JWTs given to the client by the server
 
 * redux-form - an HOC which enables us to store our form state in the redux store
 
