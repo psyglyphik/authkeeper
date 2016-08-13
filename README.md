@@ -40,4 +40,4 @@ Server-Side
 
 * bcrypt-nodejs - for encrypting user passwords before saving them to the database
 
-* cors - gives client application cross-origin access to the server
+* cors - gives the client application cross-origin access to the server
