@@ -21,7 +21,7 @@ Client-Side
 
 * redux-form - an HOC which enables us to store our form state in the redux store
 
-* webpack - builds the client-side portion of our app for the browser to consume out of various assets, dependencies, and modules
+* webpack - builds the client-side portion of our app out of various assets, dependencies, and modules
 
 
 
