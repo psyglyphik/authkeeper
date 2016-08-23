@@ -34,7 +34,7 @@ class Header extends Component {
   render() {
     return (
       <nav className="navbar navbar-light">
-        <Link to="/" className="navbar-brand header-text">React+Redux Authware</Link>
+        <Link to="/" className="navbar-brand header-text">Authkeeper Starter</Link>
         <ul className="nav navbar-nav">
           {this.renderLinks()}
         </ul>

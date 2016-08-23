@@ -1,5 +1,5 @@
 {
-  "name": "authkeeper server",
+  "name": "",
   "version": "1.0.0",
   "description": "a node + express + mongoose server",
   "main": "index.js",
