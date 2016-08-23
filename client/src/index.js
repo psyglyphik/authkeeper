@@ -33,7 +33,7 @@ if (token) {
   store.dispatch({ type: AUTH_USER });
 
   // update admin privileges if needed
-  var decoded_token = jwt_decode(token);
+  let decoded_token = jwt_decode(token);
   if (decoded_token.role == 'admin') {
     store.dispatch({ type: SET_ADMIN_PRIVILEGES });
   }

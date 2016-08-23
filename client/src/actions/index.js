@@ -23,7 +23,7 @@ export function signinUser({ email, password }) {
         dispatch({ type: AUTH_USER });
 
         // decode token for info on the user
-        var decoded_token_data = jwt_decode(response.data.token);
+        let decoded_token_data = jwt_decode(response.data.token);
 
 
         // - Save the JWT token
