@@ -37,7 +37,7 @@ Examples of routes with access protected by HOCs:
 
 Important Dependencies Involved In Application Design
 ---
-Client-Side
+**Client-Side**
 
 * react - javascript library for creating views/interfaces with components
 
@@ -56,7 +56,7 @@ Client-Side
 * webpack - builds the client-side portion of our app out of various assets, dependencies, and modules
 
 
-Server-Side
+**Server-Side**
 
 * express - a node.js http server framework and interface
 
