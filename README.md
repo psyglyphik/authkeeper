@@ -23,7 +23,7 @@ Getting Started
 
 3.  go to /authkeeper/client/ and start the client up by running:  `npm start`
 
-The application should now be running and can be accessed by your browser at **http://localhost:8080/**
+4.  The application should now be running and can be accessed by your browser at **http://localhost:8080/**
 
 
 How It Works
