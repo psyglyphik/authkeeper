@@ -18,7 +18,9 @@ Installation
 Getting Started
 ---
 1. start up the database by running:  `mongod`
+
 2. go to /authkeeper/server/ and start the server up by running:  `npm run dev`
+
 3. go to /authkeeper/client/ and start the client up by running:  `npm start`
 
 The application should now be running and can be accessed by your browser at **http://localhost:8080/**
