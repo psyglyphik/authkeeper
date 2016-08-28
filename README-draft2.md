@@ -24,7 +24,7 @@ to start the server up, go to /authkeeper/server/ and run:  `npm run dev`
 to start the client up, go to /authkeeper/client/ and run:  `npm start`
 
 
-Usage
+How It Works
 ---
 In the client's index.js file we have our components being mapped to various URL routes.  Routes which require authentication/authorization have their components wrapped with the appropriate Higher Order Component (HOC).  RequireAuth limits access to authenticated users and RequireAdmin limits access to admins.  The HOCs here check to see if the user has appropriate credentials by checking their authentication and authorization state which is set by the JSON Web Token (JWT) given to the client on signin.  If the user has the appropriate authentication and authorization credentials, then the HOC will allow the component it wraps to be rendered, otherwise it will kick the user back to the root route ('/').
 
@@ -35,7 +35,7 @@ Examples of routes with access protected by HOCs:
 	<Route path="admin_area" component={RequireAdmin(AdminArea)} />
 
 
-Important Dependencies Involved in Application Design
+Important Dependencies Involved In Application Design
 ---
 Client-Side
 
