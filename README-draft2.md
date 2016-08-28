@@ -27,7 +27,7 @@ An isomorphic javascript ( React + Redux + Node + Express + MongoDB ) starter ap
 
 In the client's index.js file we have our components being mapped to various URL routes.  Routes which require authentication/authorization have their components wrapped with the appropriate Higher Order Component (HOC).  RequireAuth limits access to authenticated users and RequireAdmin limits access to admins.  The HOCs here check to see if the user has appropriate credentials by checking their authentication and authorization state which is set by the JSON Web Token (JWT) given to the client on signin.  If the user has the appropriate authentication and authorization credentials, then the HOC will allow the component it wraps to be rendered, otherwise it will kick the user back to the root route ('/').
 
-Examples of routes in /client/src/index.js with access protected by HOC's:
+Examples of routes with access protected by HOCs:
 
 	<Route path="protected_content" component={RequireAuth(ProtectedContent)} />
 
