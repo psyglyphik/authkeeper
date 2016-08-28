@@ -34,7 +34,7 @@ Examples of routes with access protected by HOCs:
 	<Route path="admin_area" component={RequireAdmin(AdminArea)} />
 
 
-###Dependencies###
+###Important Dependencies Involved in Application Design###
 
 Client-Side
 
