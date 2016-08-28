@@ -11,7 +11,7 @@ server installation:  from /authkeeper/server run `npm install`
 
 client installation:  from /authkeeper/client run `npm install`
 
-database setup:  setup a mongodb database and set connection to it with `mongoose.connect()` in the server's index.js file
+database setup:  setup a mongodb database and set connection to it in /authkeeper/server/index.js
 
 
 ###Getting Started###
