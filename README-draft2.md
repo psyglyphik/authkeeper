@@ -7,20 +7,20 @@ An isomorphic javascript ( React + Redux + Node + Express + MongoDB ) starter ap
 
 ###Installation###
 
-	server installation:  from /authkeeper/server do an npm install
+server installation:  from /authkeeper/server do an npm install
 
-	client installation:  from /authkeeper/client do an npm install
+client installation:  from /authkeeper/client do an npm install
 
-	database setup:  setup a mongodb database and a connect to it with mongoose.connect() in the server's index.js file
+database setup:  setup a mongodb database and a connect to it with mongoose.connect() in the server's index.js file
 
 
 ###Getting Started###
 
-	start up mongodb:  mongod
+start up mongodb:  mongod
 
-	start up server from /authkeeper/server/:  npm run dev
+start up server from /authkeeper/server/:  npm run dev
 
-	start up client from /authkeeper/client/:  npm start
+start up client from /authkeeper/client/:  npm start
 
 
 ###Usage###
