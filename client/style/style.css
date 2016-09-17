@@ -2,10 +2,14 @@
   color: #00D8FF !important;
 }
 
+.default-content {
+  font-size: 20px;
+}
+
 .error {
   color: red;
 }
 
 .msg {
-  color: green;
+  color: #707B7C;
 }

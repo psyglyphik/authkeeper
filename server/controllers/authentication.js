@@ -81,7 +81,7 @@ exports.admin_activation = function(req, res, next) {
       if (err) { return next(err); }
 
       // Repond to request indicating the admin was created
-      res.json({});
+      // res.send({});
     });
   });
 }

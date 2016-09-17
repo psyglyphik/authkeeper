@@ -68,9 +68,12 @@ export function signupUser({ email, password }) {
 
 
 
+//token included in the header of the request for authorization
 export function activateAdmin({ email, password }) {
   return function(dispatch) {
-    axios.post(`${ROOT_URL}/admin_activation`, { email, password })
+    axios.post(`${ROOT_URL}/admin_activation`,
+      { email, password },
+      {headers: { authorization: localStorage.getItem('token') }} )
       .then(response => {
         browserHistory.push('/admin_area');
       })

@@ -1,8 +1,8 @@
 // Main starting point of the application
 const express = require('express');
 const http = require('http');
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
+const bodyParser = require('body-parser'); //middleware which parses HTTP request bodies and makes them available in req.body
+const morgan = require('morgan');  //HTTP request logger middleware
 const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
@@ -13,7 +13,7 @@ mongoose.connect('mongodb://localhost:auth/auth');
 
 // App Setup
 app.use(morgan('combined'));
-app.use(bodyParser.json({ type: '*/*' }));
+app.use(bodyParser.json({ type: '*/*' }));  //parse bodies of all incoming requests into JSON
 
 // Allow cross-origin resource sharing
 app.use(cors());
