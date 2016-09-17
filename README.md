@@ -28,6 +28,7 @@ Getting Started
 
 How It Works
 ---
+**Client-Side**
 In the client's index.js file we have our components being mapped to various URL routes.  Routes which require authentication/authorization have their components wrapped with the appropriate Higher Order Component (HOC).  RequireAuth is an HOC which limits access to authenticated users and RequireAdmin is an HOC which limits access to admins.  The HOCs here check to see if the user has appropriate credentials by checking their authentication and authorization state which is set by the JSON Web Token (JWT) given to the client on signin.  If the user has the appropriate authentication and authorization credentials, then the HOC will allow the component it wraps to be rendered, otherwise it will kick the user back to the root route ('/').
 
 Examples of routes with access protected by HOCs:
@@ -35,6 +36,20 @@ Examples of routes with access protected by HOCs:
 	<Route path="protected_content" component={RequireAuth(ProtectedContent)} />
 
 	<Route path="admin_area" component={RequireAdmin(AdminArea)} />
+
+
+**Server-Side**
+Routes are protected on the server-side using middlewares which are applied in the server's router.js file.  
+
+PassportJS and its associated modules was used to create two types of authentication middlewares.  The requireSignin middleware authenticates using a given email and password, and the requireAuth middleware authenticates using a given JWT token.  The Passport authentication strategies for these middlewares are defined in the passport_strategies.js file.
+
+Authorization was accomplished using the custom Express middleware requireAdmin.  It checks to see if the authenticated user is an admin.
+
+Example of middlewares being used to protect the /admin_area route in router.js:
+
+	app.get('/admin_area', requireAuth, requireAdmin, function(req, res, next) {
+		res.send({ message: 'server response:  this GET request has been authorized for an admin' });
+	});
 
 
 Important Dependencies Involved In Application Design
@@ -69,7 +84,7 @@ Important Dependencies Involved In Application Design
 * passportJS
     * passport - express authentication middleware
     * passport-jwt - passport strategy/plugin for authenticating with JSON Web Tokens
-    * passport-local - passport strategy/plugin for authenticating with a username and password.
+    * passport-local - passport strategy/plugin for authenticating with an email and password.
 
 * bcrypt-nodejs - for encrypting user passwords before saving them to the database
 
