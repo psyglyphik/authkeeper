@@ -3,7 +3,7 @@ Authkeeper
 
 About
 ---
-A ( React + Redux + Node + Express + MongoDB ) starter app which utilizes JWTs (JSON Web Tokens) to do authentication and role-based authorization using React HOCs (Higher-Order Components) on the client-side and Express routing middleware on the server-side.
+A ( React + Redux + Node + Express + MongoDB ) starter app which utilizes JSON Web Tokens (JWTs), Higher-Order React Components (HOCs), and Express routing middlewares to do authentication and role-based authorization on both the client and the server.
 
 
 Installation
