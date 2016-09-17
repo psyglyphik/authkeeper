@@ -40,6 +40,7 @@ Examples of routes with access protected by HOCs:
 
 
 **Server-Side**
+
 Routes are protected on the server-side using middlewares which are applied in the server's router.js file.  
 
 PassportJS and its associated modules was used to create two types of authentication middlewares.  The requireSignin middleware authenticates using a given email and password, and the requireAuth middleware authenticates using a given JWT token.  The Passport authentication strategies for these middlewares are defined in the passport_strategies.js file.
