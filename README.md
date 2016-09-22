@@ -6,6 +6,11 @@ About
 A ( React + Redux + Node + Express + MongoDB ) starter app which utilizes JSON Web Tokens (JWTs), Higher-Order React Components (HOCs), and Express routing middlewares to do authentication and role-based authorization on both the client and the server.
 
 
+Motivation
+---
+JWT-based authentication/authorization is not restricted by domain and is not dependent on a centralized authentication/authorization server once a token has been issued.  This allows us to build scaleable applications with distributed microservice architectures without sacrificing security.  Authkeeper should serve as a good starting point for creating such applications using the latest front-end and back-end javascript technologies.
+
+
 Installation
 ---
 **server installation:**  from /authkeeper/server run `npm install`

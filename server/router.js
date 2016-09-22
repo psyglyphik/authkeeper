@@ -31,6 +31,7 @@ module.exports = function(app) {
 
 
   // using requireSignin passport middleware to authenticate for protected route using local (email/password) strategy)
+  // Authentication.signin sends back JWT token to authenticated user
   app.post('/signin', requireSignin, Authentication.signin);
 
 
