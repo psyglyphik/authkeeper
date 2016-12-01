@@ -21,7 +21,7 @@ Installation And Setup
 
 **authentication setup:**
 
-Create a secret signing key consisting of a random series of characters like so:
+Create a secret signing key consisting of a random character string like so:
 
 	module.exports = {
 		secret: '<secret key goes here>'
