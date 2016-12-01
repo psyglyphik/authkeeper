@@ -24,7 +24,7 @@ Installation And Setup
 Create a secret signing key consisting of a random character string like so:
 
 	module.exports = {
-		secret: '<secret key goes here>'
+		secret: '<secret key string goes here>'
 	};
 
 Save that as config.js in the /server directory.  This key will be used to generate JWTs in /server/controllers/authentication.js and to validate them in /server/services/passport_strategies.js.
