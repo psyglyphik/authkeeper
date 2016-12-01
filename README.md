@@ -11,13 +11,23 @@ Motivation
 JWT-based authentication and authorization on the client is not restricted by domain and is not dependent on a centralized authentication/authorization server once a token has been issued.  And using middlewares to protect server-side routes keeps the server from being dependent on any client-side applications to authenticate and authorize access to its resources.  Thus, by adding a measure of independence between clients and servers for handling authentication and authorization, we can reliably build scaleable applications with distributed microservice architectures without sacrificing security.  Authkeeper should serve as a good starting point for creating such applications using the latest front-end and back-end javascript technologies.
 
 
-Installation
+Installation And Setup
 ---
 **server installation:**  from /authkeeper/server run `npm install`
 
 **client installation:**  from /authkeeper/client run `npm install`
 
 **database setup:**  setup a mongodb database and connect to it with `mongoose.connect()` in the server's index.js file
+
+**authentication setup:**
+
+Create a secret signing key consisting of a random series of characters like so:
+
+	module.exports = {
+		secret: '<secret key goes here>'
+	};
+
+Save that as config.js in the /server directory.  This key will be used to generate JWTs in /server/controllers/authentication.js and to validate them in /server/services/passport_strategies.js.
 
 
 Getting Started
