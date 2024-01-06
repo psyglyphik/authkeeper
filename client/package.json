@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "authkeeper",
   "version": "1.0.0",
   "description": "authkeeper react/redux client",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "",
+  "author": "Adam Valiant",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
